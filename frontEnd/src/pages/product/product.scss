@@ -1,0 +1,124 @@
+.product {
+    padding: 1.5rem 3rem;
+    display: flex;
+    gap: 2rem;
+
+    .left {
+        flex: 1;
+        display: flex;
+        gap: .8rem;
+
+        .images {
+            flex: 1;
+
+
+            img {
+                width: 100%;
+                height: 9rem;
+                object-fit: cover;
+                cursor: pointer;
+                margin-bottom: .5rem;
+            }
+
+        }
+
+        .main_image {
+            flex: 5;
+
+            img {
+                width: 100%;
+                max-height: 36rem;
+                object-fit: cover;
+
+            }
+        }
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .price{
+            font-size: 1.5rem;
+            color: rgb(0, 0, 121);
+            font-weight: 500;
+        }
+
+        p{
+            font-size: 1rem;
+            font-weight: 300;
+            text-align: justify;
+        }
+
+        .quantity{
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+            
+            button{
+               height: 1.7rem;
+                width: 2rem;
+                border: none;
+                display: grid;
+                place-items: center;
+                background-color: rgb(211, 211, 211);
+                color: black;
+                font-weight: bold;
+
+                &:hover{
+                    background-color: rgb(180, 180, 180);
+                    transition: all .2s;
+                }
+            }
+        }
+
+        button{
+                width: 10rem;
+                height: 2rem;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                background-color: blue;
+                color: white;
+                gap: .3rem;
+
+                &:hover{
+                    background-color: rgb(0, 29, 192);
+                    transition: all .2s;
+                }
+               }
+
+        .link{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            color: blue;
+
+            .item{
+                display: flex;
+                align-items: center;
+                gap: .3rem;
+            }
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+            font-weight: 400;
+        }
+
+        .details{
+            display: flex;
+            flex-direction: column;
+            width: 14rem;
+            gap: .3rem;
+
+            }
+
+    }
+}

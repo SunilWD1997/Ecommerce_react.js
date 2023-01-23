@@ -1,0 +1,44 @@
+.slider {
+    height: calc(100vh - 2rem);
+    width: 100vw;
+    position: relative;
+    
+
+    .container {
+        width: 300vw;
+        display: flex;
+        height: 100%;
+        transition: all 1s;
+        
+        img {
+            width: 100vw;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+
+    .icons{
+        // background-color: grey;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 3rem;
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        gap: 1rem;
+
+     .icon{
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid white;
+        display: grid;
+        place-items: center;
+       
+        &:hover{
+            background-color: rgb(236, 236, 236);
+        }
+     }
+    }
+
+}

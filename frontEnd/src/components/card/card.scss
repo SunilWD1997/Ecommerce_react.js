@@ -1,0 +1,34 @@
+.card {
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: .9rem;
+   
+
+    img {
+        width: 100%;
+        height: 20rem;
+        // object-fit: fill;
+        background-color: rgb(58, 57, 57);
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(103%);
+            border: 1px solid grey;
+        }
+    }
+
+    .prices {
+        display: flex;
+        gap: 1.3rem;
+
+        h4 {
+
+            &:first-child {
+                color: grey;
+                text-decoration: line-through;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.footer {
+    background-color: rgb(250, 250, 250);
+    padding: 5rem 10rem 1rem 10rem;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .item {
+            text-align: justify;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            font-size: .9rem;
+            color: grey;
+
+            h2 {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: .8rem;
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .logo {
+                font-size: 1.2rem;
+
+            }
+            .copyright{
+                color: grey;
+                font-size: .9rem;
+            }
+        }
+
+        
+    }
+}

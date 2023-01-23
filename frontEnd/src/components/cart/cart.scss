@@ -1,0 +1,90 @@
+.cart_item {
+    position: absolute;
+    right: 1rem;
+    top: 2.7rem;
+    z-index: 1000;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    width: 25rem;
+    text-align: justify;
+    box-shadow: -16px 12px 47px -7px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: -16px 12px 47px -7px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: -16px 12px 47px -7px rgba(0, 0, 0, 0.71);
+
+    h2 {
+        align-self: center;
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+
+        img {
+            width: 4rem;
+            object-fit: cover;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: .3rem;
+
+            .price {
+                color: blue;
+
+            }
+
+        }
+
+        .delete {
+            font-size: 1.5rem;
+            color: red;
+            cursor: pointer;
+
+            &:hover {
+                color: rgb(136, 0, 0);
+            }
+        }
+    }
+
+    button {
+        background-color: blue;
+        border: none;
+        padding: .35rem;
+        color: white;
+
+        &:hover {
+            background-color: rgb(1, 1, 190);
+            transition: all .2s;
+        }
+    }
+
+    .reset {
+        color: red;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(143, 0, 0);
+        }
+
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+
+        .rupee {
+            color: blue;
+
+        }
+    }
+
+}
